@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:0 tvg-id="Dummy" tvg-name="IP_Nro_YX" tvg-logo="http://upload.wikimedia.org/wikipedia/en/f/fa/ABCNewsLogo.png" group-title="News",IP_Nro_YX (http)
+http://192.168.Y.X:8902/tv.asf

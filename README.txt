@@ -4,7 +4,7 @@ FUENTE DE EMISIÓN
     http://blog.exabytetv.info/listas/
   LOCAL STREAMING    
       Acestream
-        emisión             #duplicate{dst="http{mux=ts,dst=:8903/tv.asf}",dst=display}
+        emisión             #duplicate{dst="http{mux=ts,dst=:8902/tv.asf}",dst=display}
         caché(ms)           15000
         engine              https://raw.githubusercontent.com/k-st/IPTV/master/engine.png 
         

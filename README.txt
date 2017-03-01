@@ -5,7 +5,7 @@ FUENTE DE EMISIÓN
   LOCAL STREAMING    
       Acestream
         emisión             #duplicate{dst="http{mux=ts,dst=:8903/tv.asf}",dst=display}
-        caché               15000
+        caché(ms)           15000
         engine              Start with sufficient speed only
         engine puerto       8621 
         

@@ -9,12 +9,12 @@ FUENTE DE EMISIÓN
         engine              https://raw.githubusercontent.com/k-st/IPTV/master/engine.png 
         
 REPRODUCTOR
-      URL                   http://192.168.y.x:8902/tv.asf
+      URL                   http://192.168.Y.X:8902/tv.asf
       PLEX
         plugin           
           instalarlo (pegar)
                             https://github.com/Cigaras/IPTV.bundle
                             windows   C:\Users\usuario\AppData\Local\Plex Media Server\Plug-ins
                             ubuntu    /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-ins
-          agregar el contenido de "https://raw.githubusercontent.com/k-st/IPTV/master/linea_m3u" a "/var/lib/.../Resources/playlist.m3u"
+          agregar el contenido de "https://raw.githubusercontent.com/k-st/IPTV/master/linea_m3u" a "/var/lib/.../Resources/playlist.m3u", cambiando valores de Y y X
                             

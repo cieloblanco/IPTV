@@ -1,0 +1,32 @@
+:sout=#transcode{scodec=dvbs,soverlay}:duplicate{dst=http{dst=:8902/tv.asf},dst=display} :sout-keep
+:sout=#transcode{scodec=dvbs,soverlay}:duplicate{dst=http{dst=:8902/tv.asf},dst=display} :sout-keep
+
+
+
+
+              #duplicate{dst=display,dst="transcode{venc=x264,soverlay,sfilter=logo}:http{mux=ts,dst=<YOURDESTINATION>}"}
+DISPLAY:::::: #duplicate{dst=display,dst="transcode{venc=x264,soverlay}:http{mux=ts,dst=:8902/tv.asf}"}
+
+                #transcode{venc=x264,soverlay,sfilter=logo}:http{mux=ts,dst=<YOURDESTINATION>}
+NO DISPLAY:::   #transcode{venc=x264,soverlay}:http{mux=ts,dst=:8902/tv.asf}
+
+RAW:::::::#duplicate{dst="http{mux=ts,dst=:8902/tv.asf}",dst=display}
+
+
+
+:sout=#transcode{vcodec=mp4v,vb=8000,scale=Automático,acodec=mp4a,ab=256,channels=2,samplerate=8000,soverlay}:http{dst=:8902/tv.asf} :sout-keep
+:sout=#transcode{vcodec=mp4v,vb=8000,scale=Automático,acodec=mp4a,ab=128,channels=2,samplerate=8000,soverlay}:http{dst=:8902/tv.asf} :sout-keep
+
+
+
+
+
+#duplicate{dst=display,dst="transcode{soverlay}:http{mux=ts,dst="http{dst=:8902/tv.asf}"}"}
+
+:sout=#transcode{soverlay}:http{mux=ts,dst="http{dst=:8902/tv.asf}"}"} --sout-transcode-soverlay
+---------------------------------------------------------------------------------------------------------------------
+RAW:::::
+#duplicate{dst="http{mux=ts,dst=:8902/tv.ts}",dst=display}
+
+NO DISPLAY:::::
+#transcode{vcodec=mp4v,acodec=mp4a,soverlay}:http{mux=ts,dst=:8902/tv.ts}

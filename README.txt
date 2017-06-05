@@ -26,3 +26,5 @@ CANALES
     rtmp://cdnp5.iblups.com/ptv/ playpath=ptv swfUrl=https://iblups.com/jw7/jwplayer.flash.swf live=1 pageUrl=https://iblups.com/e_panamericanatv
   Latina 1500kbps
     http://cialive-live.hds.adaptive.level3.net/hls-live/ciaremux-live/_definst_/live/stream4.m3u8
+  WillaxHD
+    rtmp://willax.mediastream.pe/ app=vv_willax playpath=livestream swfUrl=http://monitor.mediastream.pe/MStreamLive.swf?v=qtnjVOvh pageUrl=http://willax.tv/ live=true

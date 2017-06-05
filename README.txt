@@ -22,3 +22,5 @@ CANALES
 
   TvPerúHD
     rtmp://cdnp2.iblups.com/tvperuhd/ playpath=R9WtilpKKB swfUrl=https://iblups.com/jw7/jwplayer.flash.swf live=1 pageUrl=https://iblups.com/e_tvperuHD
+  PanamericanaTV
+    rtmp://cdnp5.iblups.com/ptv/ playpath=ptv swfUrl=https://iblups.com/jw7/jwplayer.flash.swf live=1 pageUrl=https://iblups.com/e_panamericanatv

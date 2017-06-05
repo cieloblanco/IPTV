@@ -18,3 +18,7 @@ REPRODUCTOR
                             ubuntu    /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-ins
           agregar el contenido de "https://raw.githubusercontent.com/k-st/IPTV/master/linea_m3u" a "/var/lib/.../Resources/playlist.m3u", cambiando valores de Y y X
                             
+CANALES
+
+TvPerúHD
+  rtmp://cdnp2.iblups.com/tvperuhd/ playpath=R9WtilpKKB swfUrl=https://iblups.com/jw7/jwplayer.flash.swf live=1 pageUrl=https://iblups.com/e_tvperuHD
